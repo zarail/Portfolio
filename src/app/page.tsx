@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -7,9 +8,9 @@ export default function Home() {
         <header className="fixed top-0 right-0 left-0 z-50 w-full px-6 sm:px-10">
           <div className="flex justify-end items-center">
             <nav className="flex gap-6 flex-wrap items-center justify-end mt-12 pr-4">
-              <a
+              <Link
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                href="https://nextjs.org/learn"
+                href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -21,7 +22,7 @@ export default function Home() {
                   height={16}
                 />
                 Resume
-              </a>
+              </Link>
               <a
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                 href="https://vercel.com/templates"

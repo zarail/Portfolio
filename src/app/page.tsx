@@ -10,13 +10,28 @@ export default function Home() {
             <nav className="flex gap-6 flex-wrap items-center justify-end mt-12 pr-4">
               <Link
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  aria-hidden
+                  src="/home.svg"
+                  alt="File icon"
+                  width={16}
+                  height={16}
+                />
+                Home
+              </Link>
+              <Link
+                className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                 href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Image
                   aria-hidden
-                  src="/file.svg"
+                  src="/resume.svg"
                   alt="File icon"
                   width={16}
                   height={16}
@@ -31,7 +46,7 @@ export default function Home() {
               >
                 <Image
                   aria-hidden
-                  src="/window.svg"
+                  src="/projects.svg"
                   alt="Window icon"
                   width={16}
                   height={16}
@@ -46,7 +61,7 @@ export default function Home() {
               >
                 <Image
                   aria-hidden
-                  src="/globe.svg"
+                  src="/contact.svg"
                   alt="Globe icon"
                   width={16}
                   height={16}
@@ -67,7 +82,7 @@ export default function Home() {
         <h1 className="mb-1 text-xl font-bold">
           Hello! My name is{' '}
           <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-            &lt;Sarah /&gt;
+            &lt;Zara /&gt;
           </code>{' '}
           and I&apos;m a full stack software engineer.
         </h1>

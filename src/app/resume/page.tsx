@@ -2,6 +2,7 @@ export default function ResumePage() {
   return (
     <main className="p-10">
       <div>
+        <h1>Resume</h1>
         <p>Zahra Ilkhan</p>
         <p>Cologne, Germany</p>
         <p>+4900000000000</p>

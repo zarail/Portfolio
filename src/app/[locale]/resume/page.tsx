@@ -1,134 +1,88 @@
-export default function ResumePage() {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { getDictionary } from '@/utils/getDictionary';
+
+type Props = {
+  params: {
+    locale: 'en' | 'de';
+  };
+};
+
+export default function ResumePage({ params }: Props) {
+  const dict: any = getDictionary(params.locale) || {};
+  const resume = dict.resume || {};
+
   return (
-    <main className="p-10">
-      <div>
-        <h1>Resume</h1>
-        <p>Zahra Ilkhan</p>
-        <p>Cologne, Germany</p>
-        <p>+4900000000000</p>
-        <p>zahrailkhan@gmail.com</p>
-        <p>[LinkedIn]</p>
-        <p>[GitHub]</p>
-      </div>
+    <main className="p-10 space-y-12">
+      <h1 className="text-3xl font-bold">{resume.title}</h1>
 
-      <br />
-
-      <div>
-        <h2>Education</h2>
-
-        <div>
-          <h3>Software Quality Assurance Traineeship</h3>
-          <p>Jan. 2025 – Feb. 2025</p>
-          <ul>
-            <li>ISTQB® CTFL Certification</li>
-            <li>
-              Interface testing with SoapUI, web apps with Selenium, Ranorex for
-              desktop
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{resume.educationTitle}</h2>
+        <ul className="space-y-6">
+          {resume.education?.map((edu: any, index: number) => (
+            <li key={index}>
+              <h3 className="text-lg font-bold">{edu.degree}</h3>
+              <p className="font-medium">{edu.institution}</p>
+              <p className="text-sm">
+                {edu.period} | {edu.location}
+              </p>
+              <ul className="list-disc list-inside mt-2 text-sm">
+                {edu.details.map((item: string, i: number) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </li>
-            <li>Test management tools: Jira, aqua Web</li>
-            <li>Agile methodologies</li>
-          </ul>
-        </div>
+          ))}
+        </ul>
+      </section>
 
-        <br />
-
-        <div>
-          <h3>Fullstack Web Development with Next.js and TypeScript</h3>
-          <p>Aug. 2024 – Sept. 2024</p>
-          <ul>
-            <li>TypeScript for secure JS development</li>
-            <li>Websites and SSR with Next.js</li>
-            <li>Using GraphQL as an alternative to REST APIs</li>
-          </ul>
-        </div>
-
-        <br />
-
-        <div>
-          <h3>Programming with JavaScript Framework React</h3>
-          <p>Jul. 2024 – Aug. 2024</p>
-          <ul>
-            <li>UI and dynamic website development with React</li>
-            <li>REST APIs and SPAs with React Router</li>
-            <li>Version control and deployment with GIT</li>
-          </ul>
-        </div>
-
-        <br />
-
-        <div>
-          <h3>Fullstack Web Development Bootcamp</h3>
-          <p>Jan. 2023 – Mar. 2023</p>
-          <ul>
-            <li>Ruby programming and web development with Ruby on Rails</li>
-            <li>Frontend with HTML, CSS, JavaScript</li>
-            <li>API development and SQL database management</li>
-          </ul>
-        </div>
-
-        <br />
-
-        <div>
-          <h3>Bachelor of Arts – Computer Science and English</h3>
-          <p>2018 – 2023</p>
-          <ul>
-            <li>
-              Internship: Digital Teaching & Learning (Mar. 2021 – May 2021)
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">
+          {resume.experienceTitle}
+        </h2>
+        <ul className="space-y-6">
+          {resume.experience?.map((job: any, index: number) => (
+            <li key={index}>
+              <h3 className="text-lg font-bold">{job.role}</h3>
+              <p className="font-medium">{job.company}</p>
+              <p className="text-sm">
+                {job.period} | {job.location}
+              </p>
+              <p className="mt-2 text-sm">{job.description}</p>
             </li>
-            <li>Study Abroad: Summer 2022</li>
-          </ul>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{resume.skillsTitle}</h2>
+        <div className="flex flex-wrap gap-2 text-sm">
+          {resume.skills?.map((skill: string, index: number) => (
+            <span key={index} className="border px-2 py-1 rounded bg-gray-800">
+              {skill}
+            </span>
+          ))}
         </div>
-      </div>
+      </section>
 
-      <br />
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{resume.languagesTitle}</h2>
+        <ul className="space-y-1 text-sm">
+          {resume.languages?.map((lang: any, index: number) => (
+            <li key={index}>
+              <strong>{lang.language}:</strong> {lang.level}
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <div>
-        <h2>Work Experience</h2>
-        <h3>Web Development Teaching Assistant</h3>
-        <p>Apr. 2023 – Jun. 2023</p>
-        <p>Supported students in learning and tasks</p>
-      </div>
-
-      <br />
-
-      <div>
-        <h2>Skills</h2>
-        <p>
-          JavaScript | TypeScript | React.js | Next.js | HTML5 | CSS3 | Tailwind
-          CSS | Bootstrap | SASS | Java | Ruby on Rails | Ruby | Active Record |
-          C | SQL | REST APIs | GraphQL | Git | npm | ESLint | SoapUI | Selenium
-          | Ranorex | ISTQB® CTFL | Agile methodologies | Jira | UX/UI | Figma |
-          Prototyping | Adobe Photoshop
-        </p>
-      </div>
-
-      <br />
-
-      <div>
-        <h2>Projects</h2>
-        <div>
-          <h3>Hey Local</h3>
-          <p>Capstone Project – Next.js/TypeScript</p>
-        </div>
-        <div>
-          <h3>The Capital City Game</h3>
-          <p>Capstone Project – React</p>
-        </div>
-      </div>
-
-      <br />
-
-      <div>
-        <h2>Languages</h2>
-        <p>German: fluent | English: fluent | Persian: native</p>
-      </div>
-
-      <br />
-
-      <div>
-        <h2>Interests</h2>
-        <p>Cycling | Playing the Drums</p>
-      </div>
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">{resume.interestsTitle}</h2>
+        <ul className="space-y-1 text-sm">
+          {resume.interests?.map((interest: string, index: number) => (
+            <li key={index}>{interest}</li>
+          ))}
+        </ul>
+      </section>
     </main>
   );
 }

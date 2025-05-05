@@ -1,0 +1,126 @@
+{
+  "home": {
+    "title": "Zahra Ilkhans Portfolio",
+    "introPart1": "Hallo! Ich heiße",
+    "introPart2": "und bin Full-Stack-Softwareentwicklerin.",
+    "mainText": "Willkommen in meinem Portfolio!"
+  },
+  "nav": {
+    "home": "Startseite",
+    "resume": "Lebenslauf",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "resume": {
+    "title": "Lebenslauf",
+    "educationTitle": "Ausblidung",
+    "experienceTitle": "Berufserfahrung",
+    "skillsTitle": "Kenntnisse",
+    "languagesTitle": "Sprachen",
+    "interestsTitle": "Interessen",
+    "education": [
+      {
+        "degree": "Software-Qualitätssicherung Ausbildung",
+        "institution": "andagon people GmbH",
+        "period": "Jan. 2025 – Feb. 2025",
+        "location": "Köln, Deutschland",
+        "details": [
+          "ISTQB® CTFL Zertifizierung",
+          "Schnittstellentests mit Soap UI, Webanwendungen mit Selenium, Ranorex für Desktopanwendungen",
+          "Testmanagement-Tools Jira und aqua Web",
+          "Agile Vorgehensweisen"
+        ]
+      },
+      {
+        "degree": "Fullstack-Webentwicklung mit Next.js und TypeScript",
+        "institution": "cimdata Bildungsakademie GmbH",
+        "period": "Aug. 2024 – Sept. 2024",
+        "location": "Deutschland",
+        "details": [
+          "TypeScript für sichere JavaScript-Entwicklung",
+          "Websites und Server-Side Rendering mit Next.js",
+          "Nutzung von GraphQL als Alternative zu REST-APIs"
+        ]
+      },
+      {
+        "degree": "Programmieren mit JavaScript Framework React",
+        "institution": "cimdata Bildungsakademie GmbH",
+        "period": "Juli 2024 – Aug. 2024",
+        "location": "Deutschland",
+        "details": [
+          "Entwicklung von User Interfaces und dynamischen Websites mit React",
+          "REST-APIs nutzen und Single Page Applications mit React Router erstellen",
+          "Versionsverwaltung und Deployment mit GIT"
+        ]
+      },
+      {
+        "degree": "Fullstack-Webentwicklung Bootcamp",
+        "institution": "Le Wagon",
+        "period": "Jan. 2023 – März 2023",
+        "location": "Köln, Deutschland",
+        "details": [
+          "Programmierung in Ruby und Webentwicklung mit Ruby on Rails",
+          "Frontend-Design mit HTML, CSS, JavaScript",
+          "API-Erstellung und Datenbankmanagement mit SQL"
+        ]
+      },
+      {
+        "degree": "Bachelor of Arts - Informatik und Englisch (LA)",
+        "institution": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "period": "2018 – 2023",
+        "location": "Bonn, Deutschland",
+        "details": [
+          "Berufsfeldpraktikum – Digital Lernen: Lern-Fair | März 2021 – Mai 2021",
+          "Auslandsaufenthalt: Toronto, Kanada | Sommer 2022"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Web-Entwicklung Lehrassistentin",
+        "company": "Le Wagon",
+        "period": "Apr. 2023 – Juni 2023",
+        "location": "Köln, Deutschland",
+        "description": "Unterstützen der Lernenden bei Lernen und Aufgaben"
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "SASS",
+      "Java",
+      "Ruby on Rails",
+      "Ruby",
+      "Active Record",
+      "C",
+      "SQL",
+      "REST-APIs",
+      "GraphQL",
+      "Git",
+      "npm",
+      "ESLint",
+      "SoapUI",
+      "Selenium",
+      "Ranorex",
+      "ISTQB® CTFL",
+      "Agile Vorgehensweisen",
+      "Jira",
+      "UX-UI",
+      "Figma",
+      "Prototyping",
+      "Adobe Photoshop"
+    ],
+    "languages": [
+      { "language": "Deutsch", "level": "fließend" },
+      { "language": "Englisch", "level": "fließend" },
+      { "language": "Persisch", "level": "Muttersprachelich" }
+    ],
+    "interests": ["Schlagzeugspielen", "Radfahren"]
+  }
+}

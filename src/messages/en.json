@@ -1,0 +1,126 @@
+{
+  "home": {
+    "title": "Zahra Ilkhan's Portfolio",
+    "introPart1": "Hello! My name is",
+    "introPart2": "and I'm a full stack software engineer.",
+    "mainText": "Welcome to my portfolio!"
+  },
+  "nav": {
+    "home": "Home",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "resume": {
+    "title": "Resume",
+    "educationTitle": "Education",
+    "experienceTitle": "Experience",
+    "skillsTitle": "Skills",
+    "languagesTitle": "Languages",
+    "interestsTitle": "Interests",
+    "education": [
+      {
+        "degree": "Software Quality Assurance Training",
+        "institution": "andagon people GmbH",
+        "period": "Jan. 2025 – Feb. 2025",
+        "location": "Cologne, Germany",
+        "details": [
+          "ISTQB® CTFL Certification",
+          "Interface testing with Soap UI, web applications with Selenium, Ranorex for desktop applications",
+          "Test management tools Jira and Aqua Web",
+          "Agile methodologies"
+        ]
+      },
+      {
+        "degree": "Fullstack Web Development with Next.js and TypeScript",
+        "institution": "cimdata Bildungsakademie GmbH",
+        "period": "Aug. 2024 – Sept. 2024",
+        "location": "Germany",
+        "details": [
+          "TypeScript for secure JavaScript development",
+          "Websites and Server-Side Rendering with Next.js",
+          "Using GraphQL as an alternative to REST APIs"
+        ]
+      },
+      {
+        "degree": "Programming with JavaScript Framework React",
+        "institution": "cimdata Bildungsakademie GmbH",
+        "period": "July 2024 – Aug. 2024",
+        "location": "Germany",
+        "details": [
+          "Development of user interfaces and dynamic websites with React",
+          "Using REST APIs and building Single Page Applications with React Router",
+          "Version control and deployment with Git"
+        ]
+      },
+      {
+        "degree": "Fullstack Web Development Bootcamp",
+        "institution": "Le Wagon",
+        "period": "Jan. 2023 – Mar. 2023",
+        "location": "Cologne, Germany",
+        "details": [
+          "Ruby programming and web development with Ruby on Rails",
+          "Frontend design with HTML, CSS, JavaScript",
+          "API creation and data management with SQL"
+        ]
+      },
+      {
+        "degree": "Bachelor of Arts – Computer Science and English (Teaching Degree)",
+        "institution": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "period": "2018 – 2023",
+        "location": "Bonn, Germany",
+        "details": [
+          "Vocational internship – Digital Learning: Learn-Fair | Mar. 2021 – May 2021",
+          "Stay abroad: Toronto, Canada | Summer 2022"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Web Development Teaching Assistant",
+        "company": "Le Wagon",
+        "period": "Apr. 2023 – June 2023",
+        "location": "Cologne, Germany",
+        "description": "Supporting learners with understanding concepts and completing assignments."
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "SASS",
+      "Java",
+      "Ruby on Rails",
+      "Ruby",
+      "Active Record",
+      "C",
+      "SQL",
+      "REST APIs",
+      "GraphQL",
+      "Git",
+      "npm",
+      "ESLint",
+      "SoapUI",
+      "Selenium",
+      "Ranorex",
+      "ISTQB® CTFL",
+      "Agile methodologies",
+      "Jira",
+      "UX/UI",
+      "Figma",
+      "Prototyping",
+      "Adobe Photoshop"
+    ],
+    "languages": [
+      { "language": "German", "level": "Fluent" },
+      { "language": "English", "level": "Fluent" },
+      { "language": "Persian", "level": "Native" }
+    ],
+    "interests": ["Playing the drums", "Cycling"]
+  }
+}

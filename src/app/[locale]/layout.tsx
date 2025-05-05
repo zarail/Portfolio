@@ -5,7 +5,7 @@ export default function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: 'en' | 'de' };
 }) {
   return (
     <section>

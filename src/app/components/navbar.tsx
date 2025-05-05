@@ -3,17 +3,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
+import { getDictionary } from '@/utils/getDictionary';
 
 type Props = {
-  locale: string;
+  locale: 'en' | 'de';
 };
 
 export default function Navbar({ locale }: Props) {
+  const dict = getDictionary(locale);
+  const nav = dict.nav;
+
   const navItems = [
-    { href: '/', label: 'Home', icon: '/home.svg' },
-    { href: '/resume', label: 'Resume', icon: '/resume.svg' },
-    { href: '/projects', label: 'Projects', icon: '/projects.svg' },
-    { href: '/contact', label: 'Contact', icon: '/contact.svg' },
+    { href: '/', label: nav.home, icon: '/home.svg' },
+    { href: '/resume', label: nav.resume, icon: '/resume.svg' },
+    { href: '/projects', label: nav.projects, icon: '/projects.svg' },
+    { href: '/contact', label: nav.contact, icon: '/contact.svg' },
   ];
 
   return (

@@ -1,6 +1,23 @@
 import Image from 'next/image';
+import { getDictionary } from '@/utils/getDictionary';
+import { Metadata } from 'next';
 
-export default function Page() {
+type Props = {
+  params: {
+    locale: 'en' | 'de';
+  };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = getDictionary(params.locale);
+  return {
+    title: dict.home.title,
+  };
+}
+
+export default async function Page({ params }: Props) {
+  const dict = getDictionary(params.locale);
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[16px] row-start-2 sm:items-start tracking-wider">
@@ -13,13 +30,13 @@ export default function Page() {
           priority
         />
         <h1 className="mb-1 text-xl font-bold">
-          Hello! My name is{' '}
-          <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
+          {dict.home.introPart1}{' '}
+          <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-mono font-semibold">
             &lt;Zara /&gt;
           </code>{' '}
-          and I&apos;m a full stack software engineer.
-        </h1>
-        <h2 className="mb-2">Welcome to my portfolio!</h2>
+          {dict.home.introPart2}
+        </h1>{' '}
+        <h2 className="mb-2">{dict.home.mainText}</h2>
       </main>
     </div>
   );

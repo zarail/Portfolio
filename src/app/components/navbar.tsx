@@ -15,7 +15,8 @@ export default function Navbar({ locale }: Props) {
 
   const navItems = [
     { href: '/', label: nav.home, icon: '/home.svg' },
-    { href: '/resume', label: nav.resume, icon: '/resume.svg' },
+    { href: '/about', label: nav.about, icon: '/about.svg' },
+    { href: '/resume', label: nav.resume, icon: '/curriculum.svg' },
     { href: '/projects', label: nav.projects, icon: '/projects.svg' },
     { href: '/contact', label: nav.contact, icon: '/contact.svg' },
   ];

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { getDictionary } from '@/utils/getDictionary';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 type Props = {
   params: {
@@ -16,7 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-  const dict = getDictionary(params.locale);
+  const locale = params.locale;
+  const dict = getDictionary(locale);
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -35,8 +37,15 @@ export default async function Page({ params }: Props) {
             &lt;Zara /&gt;
           </code>{' '}
           {dict.home.introPart2}
-        </h1>{' '}
+        </h1>
         <h2 className="mb-2">{dict.home.mainText}</h2>
+        <p className="mb-2">{dict.home.aboutMe}</p>
+        <Link
+          href={`/${locale}/about`}
+          className="mt-4 inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-green-900 transition"
+        >
+          {dict.home.aboutMeBtn}
+        </Link>
       </main>
     </div>
   );

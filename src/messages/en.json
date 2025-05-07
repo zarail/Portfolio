@@ -3,10 +3,24 @@
     "title": "About Me",
     "text": "I am a motivated team player with a strong commitment to continuous personal and professional growth.\n\nAfter completing my degree in Computer Science at the University of Bonn, I expanded my technical skills through a web development bootcamp, followed by an intensive full-stack web development course with a focus on Next.js and TypeScript.\n\nThese experiences provided me with practical knowledge in building modern full-stack applications and deepened my understanding of current web development standards. I am currently expanding my expertise in React.js and Next.js with the goal of pursuing a position as a full-stack developer.\n\nTo broaden my perspective and strengthen my foundation in software quality, I also completed a quality assurance bootcamp. There, I gained practical experience in test automation, agile methodologies, and the use of tools such as Selenium, Ranorex, and SoapUI. As part of this training, I obtained the ISTQB Foundation Level certificate and am now a certified software tester.\n\nIn addition to my technical background, my previous work in the education sector helped me develop strong communication and teamwork skills—qualities I particularly value in team environments.\n\nMy goal is to combine my technical knowledge with my interpersonal skills to develop software that not only works reliably but also provides real value and an outstanding user experience."
   },
+  "contact": {
+    "title": "Contact",
+    "description": "You can reach me anytime via:",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "heading": "Contact Form",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send"
+    }
+  },
   "home": {
     "title": "Zahra Ilkhan's Portfolio",
     "introPart1": "Hello! My name is",
-    "introPart2": "and I'm a full stack software engineer.",
+    "introPart2": "and I'm a full stack software developer.",
     "mainText": "Welcome to my portfolio!",
     "aboutMe": "After earning my Computer Science degree from the University of Bonn, I expanded my technical skill set through a Web Development Bootcamp, followed by an in-depth Full-Stack Web Development course focused on Next.js and TypeScript.",
     "aboutMeBtn": "Read more about me"
@@ -17,6 +31,32 @@
     "resume": "Resume",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of my projects. I have worked on them during my bootcamps. You can also find the source code on GitHub.",
+    "goGHBtn": "Go to GitHub",
+    "goWBtn": "Go to website",
+    "project": [
+      {
+        "title": "Hey Local",
+        "description": "Hey Local is a web application...",
+        "githubLink": "https://github.com/zarail/cimdata-Next-FinalProject.git",
+        "websiteLink": "https://hey-local.vercel.app/"
+      },
+      {
+        "title": "The Capital City Game",
+        "description": "The Capital City Game is a fun game where you guess the capital city and try to beat your high score.",
+        "githubLink": "https://github.com/zarail/cimdata-FinalProject.git",
+        "websiteLink": "https://the-capital-city-game.vercel.app/"
+      },
+      {
+        "title": "Historant",
+        "description": "Historant is a restaurant review platform...",
+        "githubLink": "https://github.com/zarail/Historant.git",
+        "websiteLink": "https://www.google.com"
+      }
+    ]
   },
   "resume": {
     "title": "Resume",

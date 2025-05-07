@@ -3,6 +3,20 @@
     "title": "Über mich",
     "text": "Ich bin eine motivierte Teamplayerin mit einem starken Engagement für kontinuierliches persönliches und berufliches Wachstum.\n\nNach meinem Informatikstudium an der Universität Bonn habe ich meine technischen Fähigkeiten durch ein Webentwicklungs-Bootcamp erweitert, gefolgt von einem intensiven Full-Stack-Webentwicklungskurs mit Schwerpunkt auf Next.js und TypeScript.\n\nDiese Erfahrungen haben mir praktische Kenntnisse im Aufbau moderner Full-Stack-Anwendungen vermittelt und mein Verständnis aktueller Webentwicklungsstandards vertieft. Derzeit erweitere ich meine Expertise in React.js und Next.js mit dem Ziel, eine Position als Full-Stack-Entwicklerin anzustreben.\n\nUm meine Perspektive zu erweitern und mein Fundament im Bereich Softwarequalität zu stärken, habe ich außerdem ein Quality-Assurance-Bootcamp absolviert. Dort sammelte ich praktische Erfahrungen in Testautomatisierung, agilen Methoden und dem Einsatz von Tools wie Selenium, Ranorex und SoapUI. Im Rahmen dieser Ausbildung habe ich das ISTQB-Zertifikat auf Foundation Level erworben und bin nun zertifizierte Software-Testerin.\n\nNeben meinem technischen Hintergrund habe ich durch meine frühere Tätigkeit im Bildungsbereich ausgeprägte Kommunikations- und Teamfähigkeiten entwickelt – Eigenschaften, die ich in Teamumgebungen besonders schätze.\n\nMein Ziel ist es, meine technischen Kenntnisse mit meinen sozialen Kompetenzen zu verbinden, um Software zu entwickeln, die nicht nur zuverlässig funktioniert, sondern auch echten Mehrwert bietet und ein herausragendes Nutzererlebnis schafft."
   },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Du kannst mich jederzeit erreichen über:",
+    "emailLabel": "E-Mail",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "form": {
+      "heading": "Kontaktformular",
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "message": "Deine Nachricht",
+      "submit": "Senden"
+    }
+  },
   "home": {
     "title": "Zahra Ilkhans Portfolio",
     "introPart1": "Hallo! Ich heiße",
@@ -17,6 +31,32 @@
     "resume": "Lebenslauf",
     "projects": "Projekte",
     "contact": "Kontakt"
+  },
+  "projects": {
+    "title": "Projekte",
+    "description": "Hier sind einige meiner Projekte. Ich habe sie während meiner Bootcamps entwickelt. Den Quellcode findest du auch auf GitHub.",
+    "goGHBtn": "Zu GitHub",
+    "goWBtn": "Zur Website",
+    "project": [
+      {
+        "title": "Hey Local",
+        "description": "Hey Local ist eine Webanwendung...",
+        "githubLink": "https://github.com/zarail/cimdata-Next-FinalProject.git",
+        "websiteLink": "https://hey-local.vercel.app/"
+      },
+      {
+        "title": "The Capital City Game",
+        "description": "The Capital City Game ist ein unterhaltsames Spiel, bei dem du die Hauptstadt erraten und deinen Highscore schlagen kannst.",
+        "githubLink": "https://github.com/zarail/cimdata-FinalProject.git",
+        "websiteLink": "https://the-capital-city-game.vercel.app/"
+      },
+      {
+        "title": "Historant",
+        "description": "Historant ist eine Plattform für Restaurantbewertungen...",
+        "githubLink": "https://github.com/zarail/Historant.git",
+        "websiteLink": "https://www.google.com"
+      }
+    ]
   },
   "resume": {
     "title": "Lebenslauf",

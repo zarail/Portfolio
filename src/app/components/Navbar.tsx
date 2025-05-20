@@ -22,7 +22,7 @@ export default function Navbar({ locale }: Props) {
   ];
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 w-full px-6 sm:px-10 bg-[#0b4f4b]">
+    <header className="fixed top-0 right-0 left-0 z-50 w-full px-6 sm:px-10 bg-[var(--background)]">
       <div className="flex items-center justify-between py-4">
         <Link href={`/${locale}`}>
           <Image

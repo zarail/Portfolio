@@ -31,7 +31,7 @@ export default function Navbar({ locale }: Props) {
             width={50}
             height={100}
             priority
-            className="block"
+            className="invert dark:invert-0"
           />
         </Link>
 
@@ -42,7 +42,13 @@ export default function Navbar({ locale }: Props) {
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href={`/${locale}${href}`}
             >
-              <Image src={icon} alt={`${label} icon`} width={16} height={16} />
+              <Image
+                src={icon}
+                alt={`${label} icon`}
+                width={16}
+                height={16}
+                className="invert dark:invert-0"
+              />
               {label}
             </Link>
           ))}

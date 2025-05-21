@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import Image from 'next/image';
 import { getDictionary } from '@/utils/getDictionary';
 
 type Props = {
@@ -13,8 +14,15 @@ export default function ResumePage({ params }: Props) {
 
   return (
     <main className="p-10 space-y-12">
-      <h1 className="text-3xl font-bold">{about.title}</h1>
-
+      <h1 className="text-3xl font-bold mb-2">{about.title}</h1>
+      <Image
+        className="mb-6 mx-auto"
+        src="/photo.jpg"
+        alt="ZI photo"
+        width={150}
+        height={38}
+        priority
+      />
       <section>
         <p className="mb-2 whitespace-pre-line">{about.text}</p>
       </section>

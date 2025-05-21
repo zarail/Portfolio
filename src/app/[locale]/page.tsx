@@ -21,10 +21,10 @@ export default async function Page({ params }: Props) {
   const dict = getDictionary(locale);
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[8px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[16px] row-start-2 sm:items-start tracking-wider">
         <Image
-          className="mb-2 mx-auto"
+          className="mb-2 mx-auto invert dark:invert-0"
           src="\logo.svg"
           alt="ZI logo"
           width={150}
@@ -40,10 +40,7 @@ export default async function Page({ params }: Props) {
         </h1>
         <h2 className="mb-2">{dict.home.mainText}</h2>
         <p className="mb-2">{dict.home.aboutMe}</p>
-        <Link
-          href={`/${locale}/about`}
-          className="mt-4 inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-green-900 transition"
-        >
+        <Link href={`/${locale}/about`} className="mt-4 btn">
           {dict.home.aboutMeBtn}
         </Link>
       </main>

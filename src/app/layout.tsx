@@ -1,20 +1,15 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Nunito_Sans, Fira_Code } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
+  variable: '--font-nunito-sans',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const firaCode = Fira_Code({
   subsets: ['latin'],
+  variable: '--font-fira-code',
 });
-
-export const metadata: Metadata = {
-  title: "Zahra Ilkhan's protfolio",
-};
 
 export default function RootLayout({
   children,
@@ -36,7 +31,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased pt-16`}
+        className={`${nunitoSans.variable} ${firaCode.variable} font-sans antialiased pt-16`}
       >
         {children}
       </body>

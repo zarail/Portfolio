@@ -57,7 +57,7 @@ export default function ResumePage({ params }: Props) {
         <h2 className="text-2xl font-semibold mb-4">{resume.skillsTitle}</h2>
         <div className="flex flex-wrap gap-2 text-sm">
           {resume.skills?.map((skill: string, index: number) => (
-            <span key={index} className="border px-2 py-1 rounded bg-gray-800">
+            <span key={index} className="glass skill">
               {skill}
             </span>
           ))}

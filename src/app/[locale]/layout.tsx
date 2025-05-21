@@ -8,7 +8,7 @@ export default function LocaleLayout({
   params: { locale: 'en' | 'de' };
 }) {
   return (
-    <section>
+    <section className="flex flex-col min-h-screen">
       <Navbar locale={params.locale} />
       {children}
     </section>

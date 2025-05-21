@@ -26,7 +26,7 @@ export default function ProjectsPage({ params }: Props) {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-green-900 transition"
+                  className="mt-4 btn"
                 >
                   {projects.goGHBtn}
                 </a>
@@ -34,7 +34,7 @@ export default function ProjectsPage({ params }: Props) {
                   href={project.websiteLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-green-900 transition"
+                  className="mt-4 btn"
                 >
                   {projects.goWBtn}
                 </a>

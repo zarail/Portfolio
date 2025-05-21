@@ -21,9 +21,15 @@ export default function ContactsPage({ params }: Props) {
           <li>
             <a
               href="mailto:zahrailkhan@gmail.com"
-              className="flex items-center gap-2 text-blue-300"
+              className="flex items-center gap-2"
             >
-              <Image src="/gmail.svg" alt="Gmail icon" width={16} height={16} />
+              <Image
+                src="/gmail.svg"
+                alt="Gmail icon"
+                width={16}
+                height={16}
+                className="invert dark:invert-0"
+              />
               <span>{contacts.emailLabel}</span>
             </a>
           </li>
@@ -32,13 +38,14 @@ export default function ContactsPage({ params }: Props) {
               href="https://www.linkedin.com/in/zahra-ilkhan/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-300"
+              className="flex items-center gap-2"
             >
               <Image
                 src="/linkedin.svg"
                 alt="LinkedIn icon"
                 width={16}
                 height={16}
+                className="invert dark:invert-0"
               />
               <span>{contacts.linkedinLabel}</span>
             </a>
@@ -48,13 +55,14 @@ export default function ContactsPage({ params }: Props) {
               href="https://github.com/zarail"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-300"
+              className="flex items-center gap-2"
             >
               <Image
                 src="/github.svg"
                 alt="GitHub icon"
                 width={16}
                 height={16}
+                className="invert dark:invert-0"
               />
               <span>{contacts.githubLabel}</span>
             </a>

@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-export default function ResumePage({ params }: Props) {
+export default function AboutPage({ params }: Props) {
   const dict: any = getDictionary(params.locale) || {};
   const about = dict.about || {};
 

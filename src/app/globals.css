@@ -41,14 +41,13 @@ code {
   border-style: solid;
   border-color: #000;
   color: #000;
-  border-radius: 0.25rem;
   transition: all 0.3s;
   background-color: transparent;
 }
 
 .btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,15 +57,14 @@ code {
   }
 
   .btn:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
   }
 }
 
 .glass {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #000;
-  border-radius: 0.5rem;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   padding: 0.25rem 0.75rem;

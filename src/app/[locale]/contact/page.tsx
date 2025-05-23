@@ -15,7 +15,9 @@ export default function ContactsPage({ params }: Props) {
   return (
     <main className="p-10 space-y-12">
       <h1 className="text-3xl font-bold">{contacts.title}</h1>
-      <h2 className="mb-2 whitespace-pre-line">{contacts.description}</h2>
+      <h2 className="whitespace-pre-line text-lg font-semibold mb-6">
+        {contacts.description}
+      </h2>
       <section>
         <ul className="space-y-2">
           <li>
@@ -72,11 +74,7 @@ export default function ContactsPage({ params }: Props) {
 
       {/* <section>
         <h2 className="text-2xl font-semibold">{contacts.form?.heading}</h2>
-        <form
-          action="https://example.com/contact"
-          method="POST"
-          className="space-y-4 mt-4"
-        >
+        <form action="/api/contact" method="POST" className="space-y-4 mt-4">
           <div>
             <label htmlFor="name" className="block mb-1">
               {contacts.form?.name}
@@ -86,7 +84,7 @@ export default function ContactsPage({ params }: Props) {
               id="name"
               name="name"
               required
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border"
             />
           </div>
           <div>
@@ -98,7 +96,7 @@ export default function ContactsPage({ params }: Props) {
               id="email"
               name="email"
               required
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border"
             />
           </div>
           <div>
@@ -109,13 +107,10 @@ export default function ContactsPage({ params }: Props) {
               id="message"
               name="message"
               required
-              className="w-full p-2 border rounded h-32"
+              className="w-full p-2 border h-32"
             />
           </div>
-          <button
-            type="submit"
-            className="px-6 py-2 bg-green-800 text-white rounded hover:bg-green-700"
-          >
+          <button type="submit" className="mt-4 btn">
             {contacts.form?.submit}
           </button>
         </form>

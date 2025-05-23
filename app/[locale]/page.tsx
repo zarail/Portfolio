@@ -9,14 +9,14 @@ type Props = {
   };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export function generateMetadata({ params }: Props): Metadata {
   const dict = getDictionary(params.locale);
   return {
     title: dict.home.title,
   };
 }
 
-export default async function Page({ params }: Props) {
+export default function Page({ params }: Props) {
   const locale = params.locale;
   const dict = getDictionary(locale);
 

@@ -9,8 +9,8 @@ type Props = {
 };
 
 export default function AboutPage({ params }: Props) {
-  const dict: any = getDictionary(params.locale) || {};
-  const about = dict.about || {};
+  const dict = getDictionary(params.locale);
+  const about = dict.about;
 
   return (
     <main className="p-10 space-y-12">

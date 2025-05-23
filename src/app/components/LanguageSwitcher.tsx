@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center gap-2 text-sm">
+    <div className="flex items-center gap-2">
       <span
         className="hover:underline cursor-pointer"
         onClick={() => changeLanguage('en')}

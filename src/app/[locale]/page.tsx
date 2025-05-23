@@ -24,21 +24,21 @@ export default async function Page({ params }: Props) {
     <div className="grid grid-rows-[8px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[16px] row-start-2 sm:items-start tracking-wider">
         <Image
-          className="mb-2 mx-auto invert dark:invert-0"
+          className="m-6 mx-auto invert dark:invert-0"
           src="\logo.svg"
           alt="ZI logo"
           width={150}
           height={38}
           priority
         />
-        <h1 className="mb-1 text-xl font-bold">
+        <h1 className="mb-1 text-2xl font-bold">
           {dict.home.introPart1}{' '}
           <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-mono font-semibold">
             &lt;Zara /&gt;
           </code>{' '}
           {dict.home.introPart2}
         </h1>
-        <h2 className="mb-2">{dict.home.mainText}</h2>
+        <h2 className="mb-2 text-lg font-semibold">{dict.home.mainText}</h2>
         <p className="mb-2">{dict.home.aboutMe}</p>
         <Link href={`/${locale}/about`} className="mt-4 btn">
           {dict.home.aboutMeBtn}

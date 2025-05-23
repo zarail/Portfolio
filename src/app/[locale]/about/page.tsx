@@ -16,7 +16,7 @@ export default function ResumePage({ params }: Props) {
     <main className="p-10 space-y-12">
       <h1 className="text-3xl font-bold mb-2">{about.title}</h1>
       <Image
-        className="mb-6 mx-auto"
+        className="m-6 mx-auto"
         src="/photo.jpg"
         alt="ZI photo"
         width={150}
@@ -24,7 +24,7 @@ export default function ResumePage({ params }: Props) {
         priority
       />
       <section>
-        <p className="mb-2 whitespace-pre-line">{about.text}</p>
+        <p className="mb-2 whitespace-pre-line text-lg">{about.text}</p>
       </section>
     </main>
   );

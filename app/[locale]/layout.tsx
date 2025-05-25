@@ -1,15 +1,17 @@
 import Navbar from '../components/Navbar';
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { locale: 'en' | 'de' };
 }) {
+  const { locale } = await Promise.resolve(params);
+
   return (
     <section className="flex flex-col min-h-screen">
-      <Navbar locale={params.locale} />
+      <Navbar locale={locale} />
       {children}
     </section>
   );

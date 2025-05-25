@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from 'next/image';
 import { getDictionary } from '@/utils/getDictionary';
 
@@ -8,8 +7,9 @@ type Props = {
   };
 };
 
-export default function AboutPage({ params }: Props) {
-  const dict = getDictionary(params.locale);
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await Promise.resolve(params);
+  const dict = getDictionary(locale);
   const about = dict.about;
 
   return (

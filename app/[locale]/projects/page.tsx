@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getDictionary } from '@/utils/getDictionary';
 
 type Props = {
@@ -7,8 +6,17 @@ type Props = {
   };
 };
 
-export default function ProjectsPage({ params }: Props) {
-  const dict: any = getDictionary(params.locale) || {};
+type Project = {
+  id?: string | number;
+  title: string;
+  description: string;
+  githubLink: string;
+  websiteLink: string;
+};
+
+export default async function ProjectsPage({ params }: Props) {
+  const { locale } = await Promise.resolve(params);
+  const dict = getDictionary(locale) || {};
   const projects = dict.projects || {};
 
   return (
@@ -18,7 +26,7 @@ export default function ProjectsPage({ params }: Props) {
         {projects.description}
       </h2>
 
-      {projects?.project?.map((project: any, index: number) => (
+      {projects?.project?.map((project: Project, index: number) => (
         <section key={project.id || index} className="mb-8 p-6 shadow-lg">
           <h3 className="text-lg font-bold mb-4">{project.title}</h3>
           <p>{project.description}</p>

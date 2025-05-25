@@ -1,9 +1,9 @@
 import { getDictionary } from '@/utils/getDictionary';
 
 type Props = {
-  params: {
+  params: Promise<{
     locale: 'en' | 'de';
-  };
+  }>;
 };
 
 type Education = {
@@ -42,8 +42,8 @@ type Resume = {
 };
 
 export default async function ResumePage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
-  const dict = getDictionary(locale) || {};
+  const { locale } = await params;
+  const dict = (await getDictionary(locale)) || {};
   const resume: Resume = dict.resume || {};
 
   return (

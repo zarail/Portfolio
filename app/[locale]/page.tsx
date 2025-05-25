@@ -4,22 +4,22 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 type Props = {
-  params: {
+  params: Promise<{
     locale: 'en' | 'de';
-  };
+  }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await Promise.resolve(params);
-  const dict = getDictionary(locale);
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
   return {
     title: dict.home.title,
   };
 }
 
 export default async function Page({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
-  const dict = getDictionary(locale);
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <div className="grid grid-rows-[8px_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16 sm:p-20">

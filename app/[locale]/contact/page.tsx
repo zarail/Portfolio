@@ -2,14 +2,14 @@ import { getDictionary } from '@/utils/getDictionary';
 import Image from 'next/image';
 
 type Props = {
-  params: {
+  params: Promise<{
     locale: 'en' | 'de';
-  };
+  }>;
 };
 
 export default async function ContactsPage({ params }: Props) {
-  const { locale } = await Promise.resolve(params);
-  const dict = getDictionary(locale) || {};
+  const { locale } = await params;
+  const dict = (await getDictionary(locale)) || {};
   const contacts = dict.contact || {};
 
   return (

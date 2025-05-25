@@ -5,9 +5,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: 'en' | 'de' };
+  params: Promise<{ locale: 'en' | 'de' }>;
 }) {
-  const { locale } = await Promise.resolve(params);
+  const { locale } = await params;
 
   return (
     <section className="flex flex-col min-h-screen">
